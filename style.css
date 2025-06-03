@@ -1,0 +1,142 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  padding: 40px;
+  background-color: #f7fafd;
+}
+
+input {
+  border: none;
+  background: none;
+}
+
+button {
+  border: none;
+  background: none;
+}
+
+.logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+.logo-title {
+  font-weight: 600;
+  font-size: 0.875rem;
+}
+
+.link {
+  color: #1c202b;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.875rem;
+}
+.link-current {
+  text-decoration: underline;
+  text-decoration-color: #263fa9;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.head {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: #ffffff;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  margin-bottom: 50px;
+}
+h1 {
+  font-weight: 700;
+  font-size: 4rem;
+  color: #38b031;
+}
+h2 {
+  font-weight: 700;
+  font-size: 2.25rem;
+  color: #223344;
+}
+.head-description {
+  font-weight: 500;
+  font-size: 1.5rem;
+  color: #223344;
+}
+
+.calendar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+.calendar-date {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.calendar-elem {
+  border: 2px solid #ebebeb;
+  border-radius: 999px;
+  padding: 8px 24px 8px 24px;
+}
+.calendar-title {
+  font-weight: 700;
+  font-size: 1rem;
+  color: #5e6778;
+}
+.calendar-input {
+  font-weight: 500;
+  font-size: 0.75rem;
+  color: #b7b7b7;
+  outline: none;
+}
+.calendar-search {
+  font-weight: 700;
+  font-size: 1rem;
+  color: #f2f4fe;
+  background-color: #38b031;
+  padding: 12px 36px 12px 36px;
+  border-radius: 8px;
+}
+
+@media screen and (min-width: 1440px) {
+}
+@media screen and (min-width: 375px) and (max-width: 1440px) {
+  .calendar-search {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 375px) {
+  body {
+    padding: 30px;
+  }
+  .link {
+    display: none;
+  }
+  .calendar-date {
+    flex-direction: column;
+  }
+  .calendar-search {
+    width: 80%;
+  }
+  nav {
+    justify-content: center;
+  }
+}
