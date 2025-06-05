@@ -115,6 +115,44 @@ h2 {
   padding: 12px 36px 12px 36px;
   border-radius: 8px;
 }
+.flower-title {
+  font-weight: 800;
+  font-size: 1.5rem;
+  color: #1c202b;
+}
+.growth-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 4px;
+}
+.floraison {
+  font-weight: 600;
+  font-size: 1rem;
+  color: #b7b7b7;
+}
+.date {
+  font-weight: 800;
+  font-size: 1rem;
+  color: #1c202b;
+}
+.description {
+  font-weight: 500;
+  font-size: 1rem;
+  color: #5e6778;
+}
+.flower-infos {
+  display: flex;
+  flex-direction: row;
+  gap: 18px;
+  align-items: center;
+  text-align: center;
+}
+.info-title {
+  font-weight: 600;
+  font-size: 1rem;
+  color: #b7b7b7;
+}
 
 @media screen and (min-width: 1440px) {
 }
